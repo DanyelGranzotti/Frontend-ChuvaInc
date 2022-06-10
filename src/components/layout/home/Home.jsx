@@ -3,6 +3,7 @@ import React from "react";
 import * as S from "../../styles/layout/home/Home.styled";
 
 import Resume from "./Resume";
+import Discusion from "./Discusion";
 
 const Home = () => {
   return (
@@ -65,6 +66,7 @@ const Home = () => {
         </S.MainSectionRight>
       </S.MainSection>
       <Resume />
+      <Discusion />
     </S.Container>
   );
 };
