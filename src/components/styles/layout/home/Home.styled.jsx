@@ -7,7 +7,7 @@ export const Container = styled.div`
   left: 15%;
   width: 85%;
   margin-top: 70px;
-  padding: 0 2rem;
+  padding: 1rem 3rem;
   background-color: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.text.secondary};
 
@@ -25,7 +25,6 @@ export const MainSection = styled.section`
   display: flex;
   width: 100%;
   height: 70%;
-  padding: 1rem;
   font-family: var(--primaryFont);
   @media (max-width: 768px) {
     flex-direction: column;
@@ -38,7 +37,7 @@ export const MainSectionLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 75%;
   height: 100%;
 
   h1 {
@@ -68,11 +67,12 @@ export const MainSectionRight = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 25%;
   height: 100%;
-  padding: 0 1rem 0 2rem;
+  margin-left: 2rem;
+
   @media (max-width: 768px) {
-    padding: 0;
+    margin: 0;
   }
 
   div:first-child {

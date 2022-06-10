@@ -2,6 +2,8 @@ import React from "react";
 
 import * as S from "../../styles/layout/home/Home.styled";
 
+import Resume from "./Resume";
+
 const Home = () => {
   return (
     <S.Container>
@@ -62,6 +64,7 @@ const Home = () => {
           </div>
         </S.MainSectionRight>
       </S.MainSection>
+      <Resume />
     </S.Container>
   );
 };
