@@ -52,6 +52,7 @@ export const HeaderPostsContainer = styledComponents.div`
 
     button{
         width: 15%;
+        min-width: 100px;
         height: 32px;
         display: flex;
         justify-content: center;
@@ -157,6 +158,7 @@ export const AddPostContainer = styledComponents.div`
 
     button{
         width: 15%;
+        min-width: 100px;
         height: 32px;
         display: flex;
         justify-content: center;

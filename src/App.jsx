@@ -6,6 +6,7 @@ import { Container } from "./components/styles/layout/global/App.styled";
 import NavBar from "./components/layout/global/NavBar";
 import Header from "./components/layout/global/Header";
 import Home from "./components/layout/home/Home";
+import Footer from "./components/layout/global/Footer";
 
 const lightTheme = {
   colors: {
@@ -61,6 +62,7 @@ const App = () => {
         <NavBar onClick={themeToggler} />
         <Header />
         <Home />
+        <Footer />
       </Container>
     </ThemeProvider>
   );

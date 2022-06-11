@@ -24,13 +24,28 @@ const PostHandler = (props) => {
           <FavoriteIcon />
         </button>
 
-        <p>{post.likes} likes</p>
+        <p>
+          {post.likes > 0 ? (
+            post.likes > 1 ? (
+              <> {post.likes} likes</>
+            ) : (
+              <> {post.likes} like</>
+            )
+          ) : (
+            "0 likes"
+          )}
+        </p>
 
-        <button
-          className="responses"
-          onClick={() => setShowComments(!showComments)}
-        >
-          {post.comments.length} resposta
+        <button onClick={() => setShowComments(!showComments)}>
+          {post.comments.length > 0 ? (
+            post.comments.length > 1 ? (
+              <> {post.comments.length} respostas</>
+            ) : (
+              <> {post.comments.length} resposta</>
+            )
+          ) : (
+            "0 respostas"
+          )}
         </button>
       </div>
       {showComments
